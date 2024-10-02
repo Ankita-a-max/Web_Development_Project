@@ -1,0 +1,142 @@
+body{
+    background-color: rgba(255, 255, 255, 0.712);
+ 
+}
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+
+.nav-link{
+    padding: 10px;
+    text-decoration: none;
+   
+   
+}
+.logo{
+  height: 30px;
+  width: 50px;
+   
+}
+.hamburger{
+    
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.menu{
+    padding: 20px;
+    display: flex;
+    background-color:antiquewhite;
+   text-align: center;
+
+  
+}
+#joinus{
+    padding: 10px;
+    background-color: rgb(218, 126, 198);
+    border-radius: 10px;
+}
+#joinus:hover{
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid red;
+    color: red;
+}
+.hero{
+    background: url("https://media.timeout.com/images/103518033/image.jpg") center/cover;
+    padding: 20px;
+    text-align: center;
+    height: 400px;
+    width:1500px;
+
+ 
+}
+.hero h1 ,p{
+    color:rgb(95, 59, 93);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+ 
+ }
+
+ 
+.products{
+    text-align: center;
+      color: rgb(177, 116, 235);
+    background-color: antiquewhite;
+}
+.product{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    background-color: antiquewhite;
+    color: blueviolet;
+ 
+}
+
+.product-grid{
+    padding: 20px;
+    background-color: antiquewhite;
+    color: blueviolet;
+    
+    display: grid;
+        grid-template-columns: repeat(3,1fr);      
+}
+.product-card{
+  
+    padding: 10px;
+    background-color:antiquewhite;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    color: blue;
+    
+
+}
+
+#details{
+    padding: 10px;
+    background-color: rgb(165, 42, 138);
+    color: white;
+    border-radius: 10px;
+}
+.product-card:hover{
+    box-shadow: 0px 0px 5px 5px rgb(165, 12, 165);
+    
+}
+.menu-toggle{
+    display:none;
+}
+.menu-toggle:checked +.hamburger+.nav-link{
+    display:block;
+}
+
+@media (max-width:768px) {
+    .nav-link{
+        gap: 20px;
+        display: none;
+    }   
+}
+
+@media(max-width:780px) {
+    .product-grid{
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);      
+    }
+    
+}
+
+@media(min-width:768px){
+    .hamburger{
+        gap: 20px;
+        display:none;
+        
+        
+    }
+}
